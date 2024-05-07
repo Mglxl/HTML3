@@ -37,7 +37,7 @@
 
 .header{
     grid-area: header;
-    height: 50%;
+    height: 70%;
 }
 
 .section-1{
@@ -48,15 +48,28 @@
 .section-2{
     grid-area: section-2;
     display: flex;
-    
+   flex-flow: column wrap; 
+   justify-content: space-between;
 }
 
 .section-3{
     grid-area: section-3;
+   
+}
+.text1{
+    text-align: center;
+    margin: 50px;
+    text-shadow: 5px 5px 5px #ff7300;
+}
+.titu1{
+    text-shadow: 5px 5px 5px #ff7300;
 }
 
 .footer{
     grid-area: footer;
+    align-items: center;
+    display: flex;
+    height: 55%;
 }
 
 .nav_item{
@@ -76,7 +89,12 @@
     border-radius: 10px;
     flex-direction: row;
     margin: 20px;
+    background-image: url(../img/carosel1.jpg);
+    width:340px;
+    height: auto;
+    background-size: cover;
 }
+
 
 .Produtos2{
     height: 80%;
@@ -87,6 +105,10 @@
     border-radius: 10px;
     flex-direction: row;
     margin: 20px;
+    background-image: url(../img/carosel1.jpg);
+    width:340px;
+    height: auto;
+    background-size: cover;
 }
 .Produtos3{
     height: 80%;
@@ -97,68 +119,189 @@
     border-radius: 10px;
     flex-direction: row;
     margin: 20px;
-}
-.vendas3{
-    height: 30%;
-    width: 50%;
-    justify-content: center;
-    background: rgb(85, 80, 80);
-    align-content: center;
-    border-radius: 10px;
-    flex-direction: row;
-    margin: 20px;
-}
-
-.vendas2{
-    height: 30%;
-    width: 50%;
-    justify-content: center;
-    background: rgb(96, 89, 89);
-    align-content: center;
-    border-radius: 10px;
-    flex-direction: row;
-    margin: 20px;
+    background-image: url(../img/carosel1.jpg);
+    width:340px;
+    height: auto;
+    background-size: cover;
 }
 .vendas1{
-    height: 30%;
-    width: 50%;
+    height: 40%;
+    width: 30%;
     justify-content: center;
     background: rgb(85, 80, 80);
     align-content: center;
     border-radius: 10px;
     flex-direction: row;
     margin: 20px;
+    border-radius: 25px;
+}
+.image1 img{
+    background-image: url(../img/carosel1.jpg);
+    width: 389px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+
+.vendas2{
+    height: 40%;
+    width: 30%;
+    justify-content: center;
+    background: rgb(85, 80, 80);
+    align-content: center;
+    border-radius: 10px;
+    flex-direction: row;
+    margin: 20px;
+    
+}
+.vendas3{
+    height: 40%;
+    width: 30%;
+    justify-content: center;
+    background: rgb(85, 80, 80);
+    align-content: center;
+    border-radius: 10px;
+    flex-direction: row;
+    margin: 20px;
+    background-image: url(../img/carosel1.jpg);
+    width: 389px;
+    height: 200px;
+    border-radius: 20px;
 }
 
 .vendas4{
-    height: 30%;
-    width: 50%;
+    height: 40%;
+    width: 30%;
     justify-content: center;
     background: rgb(85, 80, 80);
     align-content: center;
     border-radius: 10px;
     flex-direction: row;
     margin: 20px;
+    background-image: url(../img/carosel1.jpg);
+    width: 389px;
+    height: 200px;
+    border-radius: 20px;
 }
 
 .vendas5{
-    height: 30%;
-    width: 50%;
+    height: 40%;
+    width: 30%;
     justify-content: center;
     background: rgb(85, 80, 80);
     align-content: center;
     border-radius: 10px;
     flex-direction: row;
     margin: 20px;
+    background-image: url(../img/carosel1.jpg);
+    width: 389px;
+    height: 200px;
+    border-radius: 20px;
 }
 
 .vendas6{
-    height: 30%;
-    width: 50%;
+    height: 40%;
+    width: 30%;
     justify-content: center;
     background: rgb(85, 80, 80);
     align-content: center;
     border-radius: 10px;
     flex-direction: row;
     margin: 20px;
+    background-image: url(../img/carosel1.jpg);
+    width: 389px;
+    height: 200px;
+    border-radius: 20px;
+}
+.image img{
+    background-image: url(../img/carosel1.jpg);
+    width: 389px;
+    height: 200px;
+    border-radius: 20px;
+}
+.redes{
+    list-style-type: none;
+    display: flex;
+    position: relative;
+}
+.l1{
+width: 80px;
+height: 80px;
+margin: 10px;
+
+background-color: white;
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.486);
+border-radius: 60px;
+
+transition: 1s;
+
+display: flex;
+align-items: center;
+justify-content: center;
+ 
+position: relative;
+}
+.text, .bi{
+    color: #ff7300;
+}
+
+.l1:hover{
+    width: 180px;
+}
+
+.l1 .bi{
+    color: #c5aeae;
+    font-size: 2.2em;
+    
+}
+
+.l1 .text{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transform: scale(0);
+    transition: .2s;
+    transition-delay: .2s;
+}
+
+.l1 span{
+    position: absolute;
+    
+}
+
+.l1:hover .text{
+    transform: scale(1);
+}
+.l1:hover .icon{
+    transform: scale(0);
+}
+.l1 .icon{
+    transition: .3s;
+}
+
+.l1::before{
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+    inset: 0;
+    opacity: 0;
+    border-radius: 60px;
+}
+
+.l1:hover::before{
+    opacity: 1;
+}
+
+.a1{
+    display: flex;
+}
+.icon1 img{
+  float: left;
+    width: 5%;
+    height: 20%;
+    position: relative;
+    top: 20px;
+    cursor: pointer;
+    cursor: hand;
+  
+    background-size: cover;
 }
